@@ -36,7 +36,7 @@
         </aol-feature>
         <aol-feature>
           <aol-geometry-point>
-            <aol-coordinate [x]="5.1" [y]="45.1" [srid]="'EPSG:4326'"></aol-coordinate>
+            <aol-coordinate [x]="actualCoords.latitude || 0" [y]="actualCoords.longitude || 0" [srid]="'EPSG:4326'"></aol-coordinate>
           </aol-geometry-point>
           <aol-style>
             <aol-style-icon

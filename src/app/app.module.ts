@@ -8,6 +8,7 @@ import { AngularOpenlayersModule } from 'ngx-openlayers';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { Geolocation } from '@ionic-native/geolocation';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
+    Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
